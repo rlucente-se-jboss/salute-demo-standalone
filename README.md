@@ -58,8 +58,8 @@ command (where `MY_SERVER` is the IP address or name of the RHEL host):
 
     curl -s http://MY_SERVER:5000/v2/_catalog | jq
 
-The fourth script builds the [How's My Salute](https://github.com/tedbrunell/HowsMySalute)
-demo as a containerized application. The Army version is tagged as
+The fourth script builds two versions of the [How's My Salute](https://github.com/tedbrunell/HowsMySalute)
+demo as containerized applications. The Army version is tagged as
 `prod` with the intent of moving that tag from one version to another
 to trigger application updates on the RHEL host. This is discussed
 later.
@@ -71,7 +71,10 @@ command (where `MY_SERVER` is the IP address or name of the RHEL host):
 
     curl -s http://MY_SERVER:5000/v2/_catalog | jq
 
-The fifth and final script configures the container web application to run as a service, enables a timer to check for updates every thirty seconds, and configures automatic login to the UI with firefox launching on login to browse to the web application.
+The fifth and final script configures the container web application
+to run as a service, enables a timer to check for updates every
+thirty seconds, and configures automatic login to the UI with firefox
+launching on login to browse to the web application.
 
 NB: Generating the systemd service file for the application requires
 creating a container. The container creation will fail if no webcam
