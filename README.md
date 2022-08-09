@@ -2,7 +2,7 @@
 This demonstrates the [How's My
 Salute](https://github.com/tedbrunell/HowsMySalute) application and
 a timer to periodically check for application updates. You'll need
-an external USB webcam and monitor for this demonstration.
+an USB webcam and monitor for this demonstration.
 
 ## Install a RHEL instance
 Start with a workstation install of RHEL 9. Make sure this repository
