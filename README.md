@@ -38,7 +38,7 @@ have been updated.
 
 The second script installs several packages including enabling the
 web console. The web console can be accessed via the https://MY_SERVER:9090
-URL where MY_SERVER is the IP address or name of the RHEL host.
+URL where `MY_SERVER` is the IP address or name of the RHEL host.
 Please make sure to log out and then log in again to enable bash
 command completion.
 
@@ -54,7 +54,7 @@ relying on external connectivity.
     sudo ./03-config-registry.sh
 
 Test that the container registry is up and running using the following
-command (where MY_SERVER is the IP address or name of the RHEL host):
+command (where `MY_SERVER` is the IP address or name of the RHEL host):
 
     curl -s http://MY_SERVER:5000/v2/_catalog | jq
 
@@ -67,7 +67,7 @@ later.
     sudo ./04-build-containers.sh
 
 Verify that the application is in the registry using the following
-command (where MY_SERVER is the IP address or name of the RHEL host):
+command (where `MY_SERVER` is the IP address or name of the RHEL host):
 
     curl -s http://MY_SERVER:5000/v2/_catalog | jq
 
@@ -105,7 +105,7 @@ on the RHEL host:
     podman tag MY_SERVER:5000/howsmysalute:usmc MY_SERVER:5000/howsmysalute:prod
     podman push MY_SERVER:5000/howsmysalute:prod
 
-where MY_SERVER is the IP address or name of the RHEL host.
+where `MY_SERVER` is the IP address or name of the RHEL host.
 
 In the console, you should see the How's My Salute application
 restart within thirty seconds. You may need to kill the firefox
