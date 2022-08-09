@@ -120,3 +120,10 @@ in a terminal:
 The application should now be checking a US Marine Corps salute
 instead of an Army one.
 
+## Cleanly restart the demo
+If the demo should hang for any reason, ssh to the demo RHEL host
+and type the following commands:
+
+    cd ~/salute-standalone-demo
+    sudo ./restart-demo.sh
+
